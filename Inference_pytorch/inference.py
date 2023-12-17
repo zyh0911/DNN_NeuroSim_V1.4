@@ -91,7 +91,7 @@ elif args.model == 'DenseNet40':
 elif args.model == 'ResNet18':
     from models import ResNet
     # FP mode pretrained model, loaded from 'https://download.pytorch.org/models/resnet18-5c106cde.pth'
-    # model_path = './log/xxx.pth'
+    model_path = './log/resnet18.pth'
     # modelCF = ResNet.resnet18(args = args, logger=logger, pretrained = model_path)
     modelCF = ResNet.resnet18(args = args, logger=logger, pretrained = True)
 else:
